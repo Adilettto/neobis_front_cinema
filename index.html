@@ -9,20 +9,59 @@
 </head>
 <body>
     <header>
-        <h1 class="logo-name">Movie App</h1>
+        <h1 ><a class="logo-name" href="index.html">Movie App</a></h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a class="favs" href="favorites.html">Favorites</a>
+            <a href="">Contacts</a>
+            <a href="">Support</a>
+            <a href=""></a>
+        </div>
+        
         <form >
-            <input class="search-input" type="text" placeholder="e.g. opengamer">
+            <input class="search-input" type="text" placeholder="e.g. oppenheimer">
         </form>
     </header>
 
     <main>
+         <h2>Топ лучшие фильмы</h2>
 
+        <div class="container">
+            <div class="card">
+                <img class="card-img"  src="assets/oppenheimer.jpg" alt="oppenheimer">
+                <div class="rating">6.9</div>
+                <img class="like-btn" src="assets/heart-white.png" alt="heart-icon">
+                <p class="film-name">Мортал Комбат</p>
+                <p class="film-genre">боевик, фэнтези, фантастика</p>
+            </div>
+        </div>
+
+        <h2>Топ ожидаемые фильмы</h2>
+
+        <div class="container">
+            
+        </div>
+
+        <h2>Премьеры текущего месяца</h2>
+
+        <div class="container">
+           
+        </div>
+
+        <h2>Цифровые релизы текущего месяца</h2>
+
+        <div class="container">
+           
+        </div>
+       
     </main>
 
     <footer>
 
     </footer>
 
+    <script src="apiKey.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
