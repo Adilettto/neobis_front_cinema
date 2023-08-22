@@ -11,29 +11,26 @@
     <header>
         <h1 class="logo-name"><a href="index.html">Movie App</a></h1>
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="">About</a>
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="">About</a>
+            <a class="link" href="">Contacts</a>
+            <a class="link" href="">Support</a>
             <a class="favs" href="#">Favorites</a>
-            <a href="">Contacts</a>
-            <a href="">Support</a>
-            <a href=""></a>
         </div>
         
         <form >
-            <input class="search-input" type="text" placeholder="e.g. opengamer">
+            <input class="search-input" type="text" placeholder="e.g. oppenhaimer">
         </form>
     </header>
 
-    <main>
-        <h2>Избранные</h2>
-        <div class="container">
-            <div class="card">
-                <img src="assets/oppenheimer.jpg" alt="oppenheimer">
-                <div class="rating">6.9</div>
-                <p class="film-name">Мортал Комбат</p>
-                <p class="film-genre">боевик, фэнтези, фантастика</p>
-            </div>
+    <main>  
+        <h2>Favorites</h2>
+        <div class="container" id="favoritesContainer">
+            
         </div>
     </main>
+
+    <script src="favorites.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

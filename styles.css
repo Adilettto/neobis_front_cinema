@@ -20,11 +20,19 @@ a, input {
 
 .logo-name {
     color: rgb(224, 11, 11);
+    
 }
+
+.logo-name:hover {
+    opacity: 0.5;
+}
+
+
 
 header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 2rem;
 }
 
@@ -34,10 +42,34 @@ header {
     gap: 1rem;
 }
 
+    @media screen and (max-width: 1000px) {
+       .link {
+        display: none;
+       }
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .search-input {
+            margin-top: 1rem;
+        }
+
+        .card {
+            margin-left: none;
+        }
+    }
+
+
+
 .nav-links a {
     font-size: 20px;
     padding-right: 1rem;
     color: rgb(160, 159, 156);
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+    font-size: 22px;
 }
 
 .search-input {
@@ -53,8 +85,9 @@ h2 {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 2rem;
     padding: 3rem 5rem;
 }
@@ -88,10 +121,19 @@ h2 {
 .film-name {
     font-size: 1.2rem;
     padding: 5px 0;
+    width: 15rem;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
 }
 
 .film-genre {
     color: yellow;
+    width: 15rem;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+    height: 2rem;
 }
 
 .like-btn {
@@ -99,5 +141,6 @@ h2 {
     height: 2rem;
     position: absolute;
     top: 1rem;
-    right: 2.5rem;
+    right: 1rem;
+    background: transparent;
 }
